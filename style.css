@@ -1,0 +1,732 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.desk {
+  display: none;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+/* Burger menuens base kode fra Chatgpt */
+
+/* Burger menu */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  margin: 1rem 1rem 0 0;
+  z-index: 11;
+}
+
+.burger-menumono {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  margin: 1rem 1rem 0 0;
+  z-index: 11;
+}
+
+.burger-menu span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #f8faf8;
+  box-shadow: 0 4px 20px #110f0c;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger-menumono span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: rgb(5, 5, 5);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menumono {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu a {
+  color: #f8faf8;
+  text-shadow: 0 4px 20px #110f0c;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.menumono a {
+  color: #190f03;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+a {
+  color: #190f03;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #d6516e;
+}
+
+.menumono a:hover {
+  color: #d6516e;
+}
+
+header nav {
+  padding-top: 1.2rem;
+  font-weight: bold;
+}
+
+/* Media queries for mobile view */
+@media (max-width: 800px) {
+  .burger-menu {
+    display: flex;
+  }
+  .burger-menumono {
+    display: flex;
+  }
+  nav {
+    display: none; /* Hide nav by default */
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+    z-index: 10;
+    transition: transform 0.3s ease;
+    height: 844px;
+    font-size: 140%;
+  }
+
+  .navmono {
+    display: none; /* Hide nav by default */
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background-color: #f9f7f2;
+    z-index: 10;
+    transition: transform 0.3s ease;
+    height: 844px;
+    font-size: 140%;
+    color: #190f03;
+  }
+
+  .menu {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    display: block;
+    text-align: left;
+    margin-top: 5rem;
+  }
+
+  .menumono {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    display: block;
+    text-align: left;
+    margin-top: 5rem;
+  }
+
+  .menu li {
+    margin: 50px 0;
+  }
+
+  .menumono li {
+    margin: 50px 0;
+  }
+
+  nav.active {
+    display: block; /* Show nav when active */
+    transform: translateX(0);
+  }
+
+  /* Animation for burger menu transformation */
+  .burger-menu.open span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .burger-menu.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.open span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  /* Animation for burger menu transformation */
+  .burger-menumono.open span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .burger-menumono.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menumono.open span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}
+
+.mattwhite {
+  color: #f8faf8;
+  text-shadow: 0 4px 20px #110f0c;
+}
+.dark {
+  color: #190f03;
+}
+.bgdark {
+  background-color: #190f03;
+}
+.black {
+  color: rgb(5, 5, 5);
+}
+.bgblack {
+  background-color: rgb(5, 5, 5);
+}
+.green {
+  color: #01ad76;
+}
+.bggreen {
+  background-color: #01ad76;
+}
+.eggwhite {
+  color: #f9f7f2;
+}
+.bgeggwhite {
+  background-color: #f9f7f2;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.marginair {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.width90 {
+  width: 90%;
+}
+
+.width50 {
+  width: 50%;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.order1 {
+  order: 1;
+}
+.order2 {
+  order: 2;
+}
+.order3 {
+  order: 3;
+}
+.order4 {
+  order: 4;
+}
+.order5 {
+  order: 5;
+}
+.order6 {
+  order: 6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  margin: 0 auto;
+}
+
+/* Base koden for decorative-linjer og dots fra ChatGPT */
+
+.decorative-line {
+  border: none;
+  height: 0.3rem; /* Thickness of the line */
+  background-color: #110f0c;
+  margin: 0.3rem 0; /* Space above and below the line */
+  margin-bottom: 1rem;
+  width: 200px;
+}
+
+.decorative-linemono {
+  border: none;
+  height: 0.3rem; /* Thickness of the line */
+  background-color: #f9f7f2;
+  width: 200px;
+}
+
+.decorative-linekim {
+  border: none;
+  height: 0.35rem; /* Thickness of the line */
+  background-color: #110f0c;
+  margin: 0.3rem 0; /* Space above and below the line */
+  width: 100%;
+}
+
+.dots {
+  margin: 6rem auto;
+  display: flex;
+  gap: 1rem; /* Space between the dots */
+  justify-content: center;
+}
+
+.dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #110f0c;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.order1 {
+  order: 1;
+}
+.order2 {
+  order: 2;
+}
+.grid_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid_4_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  min-height: 3rem;
+  width: 100%;
+  text-align: center;
+  margin-right: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #110f0c;
+  bottom: 0;
+}
+
+.air {
+  height: 3rem;
+  width: 100%;
+}
+.air1 {
+  height: 1rem;
+  width: 100%;
+}
+.air5 {
+  height: 5rem;
+  width: 100%;
+}
+
+.homebanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 844px;
+  background-image: url("Img/Home/banner1.jpg");
+  background-position: 50% 20%;
+}
+
+.kimbanner {
+  position: absolute;
+  top: -24%;
+}
+
+.bannertext {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 2rem;
+  margin-bottom: 9rem;
+  font-size: 180%;
+  z-index: 9;
+}
+
+.homeh1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.arrow {
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-family: petrona;
+  letter-spacing: 0.2rem;
+}
+
+h2 {
+  font-size: 145%;
+  font-family: petrona;
+}
+
+h3 {
+  font-family: petrona;
+  margin-top: 0.5rem;
+}
+
+p {
+  font-family: "Pavanam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Base kode er fra ChatGPT (slider) */
+.slider {
+  margin: 0 auto;
+  position: relative;
+  border-radius: 5px;
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.6s ease;
+  width: 100%;
+}
+
+.slide {
+  width: 300px;
+  height: 500px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.slide-img {
+  height: 100%;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-shadow: 0 0 10px #110f0c;
+  font-size: 200%;
+  transition: transform 0.1s ease;
+  z-index: 9;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+button.pop-button:active {
+  animation: pop-up 0.2s ease forwards;
+}
+
+/* Base kode er fra ChatGPT (keyframes) */
+
+@keyframes pop-up {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); /* Slightly larger size */
+  }
+  100% {
+    transform: scale(1); /* Back to normal size */
+  }
+}
+
+.monoslide {
+  height: 300px;
+  border-radius: 20px;
+  margin: 1rem auto;
+}
+
+footer {
+  height: 20rem;
+  background-color: #110f0c;
+}
+
+footer h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f8faf8;
+}
+
+.icons {
+  margin: 20px auto;
+  width: 170px;
+}
+
+.icon1 {
+  width: 37px;
+  height: 32px;
+}
+.icon2 {
+  width: 16px;
+  height: 32px;
+}
+.icon3 {
+  width: 32px;
+  height: 32px;
+}
+
+.iconimg {
+  object-fit: cover;
+}
+
+.monoimg {
+  border-radius: 20px;
+}
+
+.kimimg {
+  overflow: hidden;
+}
+.kimimgscale {
+  transform: scale(1);
+}
+
+.gridkim {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 400px;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 600px;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+#bg-video2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 600px;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: #190f03;
+  text-align: center;
+  padding: 20px;
+}
+
+.exbanner {
+  height: 400px;
+  padding: 30px;
+}
+/* Base kode for at fullsize images er fra ChatGPT (Lightbox, Thumbnail) */
+/* The thumbnail image */
+.thumbnail {
+  /* Example size */
+  cursor: pointer;
+  transition: transform 0.3s ease, z-index 0s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.imghover {
+  /* Example size */
+  cursor: pointer;
+  transition: transform 0.3s ease, z-index 0s ease, font-size 0.4s ease;
+}
+
+.imghover:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  font-size: 105%;
+}
+
+/* The Lightbox (hidden by default) */
+.lightbox {
+  display: none; /* Hidden initially */
+  position: fixed;
+  z-index: 999; /* Make sure it's on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Full image in the lightbox */
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+/* Close button for lightbox */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.prevex {
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: #00000014;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.prevex h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #f8faf8;
+  font-size: 250%;
+  position: absolute;
+  bottom: 15%;
+  text-shadow: 0 0 20px #110f0c;
+  width: 290px;
+}
+
+/* Base kode er fra ChatGPT (Exhibition-btn) */
+
+.exhibition-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+  text-shadow: 0 0 0;
+  margin: 0 auto;
+}
+
+.exhibition-btn:hover {
+  transform: scale(1.05);
+}
+
+.exhibition-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d6516e; /* Color that slides in */
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.exhibition-btn:hover::before {
+  transform: translateX(0);
+}

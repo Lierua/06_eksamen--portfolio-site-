@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+    <header class="flexrow">
+        <div class="logo">
+            <a href="index.html"><img src="Img/Home/Group_11.png" alt="logo"></a>
+        </div>
+        <div class="burger-menu" onclick="toggleMenu('menu1')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">INDEX</a></li>
+                <li><a href="work.html">WORK</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="air"></div>
+        <div class="flexcol headline">
+            <h1 class="textcenter">Latest Exhibition</h1>
+            <div class="decorative-line"></div>
+        </div>
+
+        <div class="video-background" id="ex">
+            <video autoplay muted loop id="bg-video">
+                <source src="Img/Monogatari_Galleri/Optagelse_Mono3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="flexcol content exbanner">
+                <a href="Monogatari.html">
+                    <div class="flexcol width90">
+                        <h1 class="textcenter">The Monogatari Series</h1>
+                        <h1>物語</h1>
+                    </div>
+                </a>
+                <div>
+                    <h2>Directed by Akiyuki Shinbo</h2>
+                </div>
+                <div>
+                    <h2>Written by Nisio Isin</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="air"></div>
+        <div class="flexcol headline">
+            <h1 class="textcenter">Previous Exhibitions</h1>
+            <div class="decorative-line"></div>
+        </div>
+
+        <!-- Alle sliders base fra ChatGPT -->
+        <div class="slider phone" id="slider1">
+            <div class="slides">
+                <div class="slide imghover">
+                    <a href="kimjunggi.html">
+                        <div class="prevex">
+                            <h2>Kim Jung Gi</h2>
+                        </div>
+                        <img class="slide-img" src="Img/Kim_Jung_Gi/KimHome.png" alt="Image 1">
+                    </a>
+                </div>
+                <div class="slide  imghover">
+                    <div class="prevex">
+                        <h2>Caravaggio</h2>
+                    </div>
+                    <img class="slide-img"
+                        src="Img/Caravaggio/Caravaggio_(Michelangelo_Merisi)_-_The_Cardsharps_-_Google_Art_Project.jpg"
+                        alt="Image 2">
+                </div>
+                <div class="slide  imghover">
+                    <div class="prevex">
+                        <h2>Zeen Chin</h2>
+                    </div>
+                    <img class="slide-img" src="Img/Zeen_Chin/zeen-chin-.jpg" alt="Image 3">
+                </div>
+            </div>
+
+            <button class="prev pop-button" onclick="prevSlide('slider1')">&#10094;</button>
+            <button class="next pop-button" onclick="nextSlide('slider1')">&#10095;</button>
+        </div>
+
+        <div class="desk">
+            <div class="slides grid_1-1-1 prevexhi">
+                <div class="prevexbox">
+                    <div class="imghover">
+                        <a href="kimjunggi.html">
+                            <div class="prevex">
+                                <h2>Kim Jung Gi</h2>
+                            </div>
+                            <img class="slide-img" src="Img/Kim_Jung_Gi/KimHome.png" alt="Image 1">
+                        </a>
+                    </div>
+                </div>
+                <div class="prevexbox">
+                    <div class="imghover">
+                        <div class="prevex">
+                            <h2>Caravaggio</h2>
+                        </div>
+                        <img class="slide-img"
+                            src="Img/Caravaggio/Caravaggio_(Michelangelo_Merisi)_-_The_Cardsharps_-_Google_Art_Project.jpg"
+                            alt="Image 2" style="width:203%;">
+                    </div>
+                </div>
+                <div class="prevexbox">
+                    <div class="imghover">
+                        <div class="prevex">
+                            <h2>Zeen Chin</h2>
+                        </div>
+                        <img class="slide-img" src="Img/Zeen_Chin/zeen-chin-.jpg" alt="Image 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid_1">
+            <button class="exhibition-btn">All Exhibitions</button>
+        </div>
+        <div class="air"></div>
+        <div class="air"></div>
+    </main>
+    <footer>
+        <div class="air"></div>
+        <div>
+            <h3>Contact and follow us here</h3>
+            <div class="flexrow icons">
+                <div class="icon1"><img class="iconimg" src="Img/Footer/Vector(1).png" alt="">
+                </div>
+                <div class="icon2"><img class="iconimg" src="Img/Footer/Vector.png" alt=""></div>
+                <div class="icon3"><img class="iconimg" src="Img/Footer/Vector(2).png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+
+</html>
