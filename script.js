@@ -28,6 +28,10 @@ const o3 = document.querySelector("#o3");
 const o4 = document.querySelector("#o4");
 const o5 = document.querySelector("#o5");
 
+//general container for content
+
+const conContainer = document.querySelector("#content-container");
+
 o2.addEventListener("click", clickO2);
 
 function clickO2() {
@@ -66,6 +70,11 @@ function clickO2() {
     Co5.classList.add("clickthemeup");
     Co5.addEventListener("animationend", moveO2);
   } else {
+    //ACTIVATE CONTENT CONTAINER
+    console.log("activate content container");
+    conContainer.classList.remove("hide");
+    conContainer.classList.add("content_box");
+
     moveO2();
   }
 }
@@ -121,6 +130,11 @@ function clickO3() {
     Co5.classList.add("clickthemeup");
     Co5.addEventListener("animationend", moveO3);
   } else {
+    //ACTIVATE CONTENT CONTAINER
+    console.log("activate content container");
+    conContainer.classList.remove("hide");
+    conContainer.classList.add("content_box");
+
     moveO3();
   }
 }
@@ -176,6 +190,11 @@ function clickO4() {
     Co5.classList.add("clickthemeup");
     Co5.addEventListener("animationend", moveO4);
   } else {
+    //ACTIVATE CONTENT CONTAINER
+    console.log("activate content container");
+    conContainer.classList.remove("hide");
+    conContainer.classList.add("content_box");
+
     moveO4();
   }
 }
@@ -231,6 +250,11 @@ function clickO5() {
     Co3.classList.add("clickthemeup");
     Co3.addEventListener("animationend", moveO5);
   } else {
+    //ACTIVATE CONTENT CONTAINER
+    console.log("activate content container");
+    conContainer.classList.remove("hide");
+    conContainer.classList.add("content_box");
+
     moveO5();
   }
 }
