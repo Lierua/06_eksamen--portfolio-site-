@@ -1,39 +1,5 @@
 //Alt JAVA er fra ChatGPT
 
-function showSlide(sliderId, index) {
-  const slider = document.getElementById(sliderId);
-  const slides = slider.querySelectorAll(".slide");
-  const totalSlides = slides.length;
-  const slidesContainer = slider.querySelector(".slides");
-  let currentSlide = parseInt(slider.getAttribute("data-current-slide")) || 0;
-
-  if (index >= totalSlides) {
-    currentSlide = 0;
-  } else if (index < 0) {
-    currentSlide = totalSlides - 1;
-  } else {
-    currentSlide = index;
-  }
-
-  slider.setAttribute("data-current-slide", currentSlide);
-  slidesContainer.style.transform = `translateX(${-currentSlide * 100}%)`;
-}
-
-function nextSlide(sliderId) {
-  const currentSlide = parseInt(document.getElementById(sliderId).getAttribute("data-current-slide")) || 0;
-  showSlide(sliderId, currentSlide + 1);
-}
-
-function prevSlide(sliderId) {
-  const currentSlide = parseInt(document.getElementById(sliderId).getAttribute("data-current-slide")) || 0;
-  showSlide(sliderId, currentSlide - 1);
-}
-
-// Automatically move to the next slide every 3 seconds
-setInterval(() => {
-  nextSlide();
-}, 20000); // 3000ms = 3 seconds
-
 function toggleMenu(menuType) {
   let nav, burgerButton;
 

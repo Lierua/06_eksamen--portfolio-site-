@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pavanam&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+    <header class="flexrow">
+        <div class="logo">
+            <a href="index.html"><img src="Img/general/Group_14.svg" alt="logo"></a>
+        </div>
+        <div class="burger-menu" onclick="toggleMenu('menu1')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="bm">
+            <ul class="menu_bm">
+                <li><a href="index.html">INDEX</a></li>
+                <li><a href="work.html">WORK</a></li>
+                <li><a class="active" href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="hero">
+            <div id="title" class="center grid_1">
+                <div class="hidetitle">
+                    <h1 id="titletext" class="textcenter">ABOUT</h1>
+                </div>
+                <h2 class="textcenter">OLIVER A L BENGTSSON</h2>
+            </div>
+        </div>
+        <div id="container2" class="center">
+            <div class="air1"></div>
+            <div id="bio" class="profilgrid poshidden">
+                <div class="profilcontainer center"><img class="profilimg" src="Img/general/profil.webp"
+                        alt="profil image">
+                </div>
+                <div class="flexcol biocontainer center">
+                    <h2 class="marginright">BIO</h2>
+                    <div class="left-decorative-line"></div>
+                    <p>My name is Oliver, I’m 27 years old, and throughout my life, I’ve explored many different paths
+                        driven by my evolving interests. This journey has led me to complete a higher preparatory
+                        examination (HF), train as a web integrator, and earn a bachelor’s degree in mathematics.
+                        However, one thing has remained constant: my passion for art and drawing, especially within the
+                        realm of digital art. I have dedicated countless hours to mastering Photoshop and studying
+                        artworks to refine my skills.</p>
+                    <p class="marginair">I’m now eager to further develop my creative abilities and explore new
+                        opportunities at KEA.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-background"></div>
+
+    </main>
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="java.js"></script>
+</body>
+
+</html>

@@ -1,78 +1,66 @@
 @media (min-width: 800px) {
-  .homebanner {
-    height: 790px;
-  }
   .phone {
     display: none;
   }
   .desk {
     display: block;
   }
-  .prevexhi {
-    width: 800px;
+  nav {
     margin: 0 auto;
   }
-  .prevex {
-    height: 375px;
-    width: 267px;
-    z-index: 8;
+  #hero {
+    background-image: url("Img/general/1.png");
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    transform: translate(0, 0);
+    aspect-ratio: 16/9;
   }
-  .kimbanner {
-    transform: scale(1.5);
-    position: absolute;
-    right: 20%;
-    top: 20%;
+  h1 {
+    font-size: 950%;
   }
-  .homebanner {
-    background-image: url("Img/Home/banner1.jpg");
-    background-position: 0% 0%;
+  h2 {
+    font-size: 150%;
   }
-  .prevexbox {
-    height: 375px;
-    width: 267px;
+  .hidetitle {
     overflow: hidden;
+    height: 170px;
   }
-  .slide {
-    height: 190px;
-    width: 190px;
-    border-radius: 10px;
+
+  #title {
+    top: 85%;
   }
-  .slides {
+
+  #container {
+    height: 450px;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #C02 {
+    height: 450px;
+    position: absolute;
+  }
+  #C03 {
+    height: 450px;
+    position: absolute;
+  }
+  #C04 {
+    height: 450px;
+    position: absolute;
+  }
+  #C05 {
+    height: 450px;
+    position: absolute;
+  }
+  .air {
+    height: 3rem;
+    width: 100%;
+  }
+  .profilgrid {
     display: grid;
-  }
-  .prevex h2 {
-    font-size: 170%;
-  }
-  .monoinfo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 20px;
-  }
-  header {
-    margin: 0 auto;
-  }
-  .logo {
-    margin-left: 2rem;
-  }
-  .gridkim {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .kimimg {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .menu {
-    margin-right: 1.5rem;
-  }
-
-  .menumono {
-    margin-right: 1.5rem;
-  }
-}
-
-@media (min-width: 1900px) {
-  .homebanner {
-    height: 950px;
   }
 }
