@@ -481,6 +481,7 @@ button.pop-button:active {
   height: 700px;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 #title {
@@ -611,4 +612,14 @@ button.pop-button:active {
 
 .content_box {
   display: grid;
+}
+
+.horselottie {
+  position: absolute;
+  left: -560px;
+}
+
+.headlottie {
+  position: absolute;
+  top: 181px;
 }

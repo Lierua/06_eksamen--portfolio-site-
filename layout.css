@@ -28,7 +28,7 @@
   }
 
   #title {
-    top: 85%;
+    top: 65%;
   }
 
   #container {
@@ -66,5 +66,15 @@
   .content_box {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .horselottie {
+    position: absolute;
+    left: 200px;
+  }
+
+  .headlottie {
+    position: absolute;
+    top: 137px;
+    left: 838px;
   }
 }
