@@ -131,7 +131,9 @@ nav ul li a:hover::after {
     position: absolute;
     right: 0;
     width: 100%;
-    background-color: #191b1d;
+    background: #0003;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 10;
     transition: transform 0.3s ease;
     height: 844px;

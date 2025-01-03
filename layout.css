@@ -28,7 +28,7 @@
   }
 
   #title {
-    top: 65%;
+    top: 75%;
   }
 
   #container {
@@ -76,5 +76,10 @@
     position: absolute;
     top: 137px;
     left: 838px;
+  }
+
+  .menu_bm {
+    border-radius: 100px;
+    padding: 0.5rem;
   }
 }
