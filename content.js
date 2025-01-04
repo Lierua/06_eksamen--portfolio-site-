@@ -9,15 +9,18 @@ const o3 = document.querySelector("#o3");
 const o4 = document.querySelector("#o4");
 const o5 = document.querySelector("#o5");
 
+const conContainerO2 = document.querySelector("#content-container");
+const sec1 = document.querySelector(".sec1");
+const sec2 = document.querySelector(".sec2");
+const sec3 = document.querySelector(".sec3");
+const o2sec1 = document.querySelector("#o2sec1");
+const o2sec2 = document.querySelector("#o2sec2");
+const o2sec3 = document.querySelector("#o2sec3");
+
 //general container for content
 const conContainer = document.querySelector("#content-container");
 window.addEventListener("load", openContent);
 function openContent() {
-  //ACTIVATE CONTENT CONTAINER
-  console.log("activate content container");
-  conContainer.classList.remove("hide");
-  conContainer.classList.add("content_box");
-
   moveO2();
 }
 
@@ -76,6 +79,14 @@ function moveO2() {
 
   Co2.classList.add("clicktheme");
   o2.classList.add("active");
+
+  //ACTIVATE CONTENT CONTAINER O2
+  console.log("activate content container");
+  conContainer.classList.remove("hide");
+  conContainer.classList.add("content_box");
+
+  //START CONTENT REVEAL FUNCTION
+  reveal();
 }
 
 o3.addEventListener("click", clickO3);
@@ -247,4 +258,32 @@ function moveO5() {
 
   o5.classList.add("active");
   Co5.classList.add("clicktheme");
+}
+
+//ACTIVATE CONTENT IN CONTENT CONTAINER
+//SCROLL VARIABLES IS FROM CHATGPT
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const windowHeight = window.innerHeight;
+  const documentHeight = document.documentElement.scrollHeight;
+  const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+  setTimeout(() => {
+    console.log(`Scroll Percentage: ${scrollPercent.toFixed(2)}%`);
+  }, 1000);
+});
+
+function reveal() {
+  if (conContainerO2.classList.contains("content_box")) {
+    console.log("conContainer revealed");
+    if (window.matchMedia("(max-width: 800px)").matches) {
+      console.log("reveal for mobil");
+      if (scrollPercent >= 30) {
+        console.log("You've scrolled 30% of the page!");
+        sec1.classList.add("leftToRight");
+      }
+    } else {
+      console.log("reveal for desktop");
+    }
+  }
 }

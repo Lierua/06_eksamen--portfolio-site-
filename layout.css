@@ -81,6 +81,25 @@
     justify-content: space-around;
     padding: 0.3rem 4rem 0.3rem 4rem;
   }
+
+  .textright {
+    text-align: right;
+  }
+
+  .textleft {
+    text-align: left;
+  }
+
+  .left-decorative-line {
+    border: none;
+    height: 0.2rem; /* Thickness of the line */
+    background-color: #fff;
+    margin: 0.5rem 0; /* Space above and below the line */
+    margin-bottom: 2rem;
+    margin-left: auto;
+    width: 200px;
+  }
+
   #o2sec1,
   #o2sec3 {
     padding: 1rem;
@@ -105,5 +124,11 @@
   .section {
     height: 100%;
     width: 100%;
+    position: relative;
+  }
+
+  .unsectionL,
+  .unsectionR {
+    position: absolute;
   }
 }

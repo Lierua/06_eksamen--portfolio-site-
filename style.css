@@ -188,13 +188,6 @@ nav ul li a:hover::after {
 .marginleft {
   margin-left: auto;
 }
-.textright {
-  text-align: right;
-}
-
-.textleft {
-  text-align: left;
-}
 
 .width90 {
   width: 90%;
@@ -260,7 +253,7 @@ main {
   background-color: #fff;
   margin: 0.5rem 0; /* Space above and below the line */
   margin-bottom: 2rem;
-  margin-left: auto;
+  margin-right: auto;
   width: 200px;
 }
 
@@ -309,7 +302,7 @@ main {
 }
 
 .air {
-  height: 2rem;
+  height: 3rem;
   width: 100%;
 }
 .air1 {
@@ -636,4 +629,24 @@ button.pop-button:active {
 .headlottie {
   position: absolute;
   top: 181px;
+}
+
+@media (max-width: 800px) {
+  .sec1,
+  .sec2,
+  .sec3 {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 2rem;
+    transform: translate(-110%, 0);
+  }
+
+  #content-container {
+    width: 95%;
+    max-width: 400px;
+  }
+
+  .o-1 {
+    order: -1;
+  }
 }
