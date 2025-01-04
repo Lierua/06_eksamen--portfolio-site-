@@ -10,8 +10,16 @@ const o4 = document.querySelector("#o4");
 const o5 = document.querySelector("#o5");
 
 //general container for content
-
 const conContainer = document.querySelector("#content-container");
+window.addEventListener("load", openContent);
+function openContent() {
+  //ACTIVATE CONTENT CONTAINER
+  console.log("activate content container");
+  conContainer.classList.remove("hide");
+  conContainer.classList.add("content_box");
+
+  moveO2();
+}
 
 o2.addEventListener("click", clickO2);
 
@@ -34,6 +42,7 @@ function clickO2() {
   if (Co3.classList.contains("clicktheme")) {
     console.log("moved and removed");
     Co3.classList.remove("clicktheme");
+    o3.classList.remove("active");
     // RESET
     Co3.offsetWidth;
     Co3.classList.add("clickthemeup");
@@ -42,21 +51,16 @@ function clickO2() {
     Co4.classList.remove("clicktheme");
     // RESET
     Co4.offsetWidth;
+    o4.classList.remove("active");
     Co4.classList.add("clickthemeup");
     Co4.addEventListener("animationend", moveO2);
   } else if (Co5.classList.contains("clicktheme")) {
     Co5.classList.remove("clicktheme");
     // RESET
     Co5.offsetWidth;
+    o5.classList.remove("active");
     Co5.classList.add("clickthemeup");
     Co5.addEventListener("animationend", moveO2);
-  } else {
-    //ACTIVATE CONTENT CONTAINER
-    console.log("activate content container");
-    conContainer.classList.remove("hide");
-    conContainer.classList.add("content_box");
-
-    moveO2();
   }
 }
 
@@ -71,6 +75,7 @@ function moveO2() {
   Co5.removeEventListener("animationend", moveO2);
 
   Co2.classList.add("clicktheme");
+  o2.classList.add("active");
 }
 
 o3.addEventListener("click", clickO3);
@@ -96,27 +101,23 @@ function clickO3() {
     Co2.classList.remove("clicktheme");
     // RESET
     Co2.offsetWidth;
+    o2.classList.remove("active");
     Co2.classList.add("clickthemeup");
     Co2.addEventListener("animationend", moveO3);
   } else if (Co4.classList.contains("clicktheme")) {
     Co4.classList.remove("clicktheme");
     // RESET
     Co4.offsetWidth;
+    o4.classList.remove("active");
     Co4.classList.add("clickthemeup");
     Co4.addEventListener("animationend", moveO3);
   } else if (Co5.classList.contains("clicktheme")) {
     Co5.classList.remove("clicktheme");
     // RESET
     Co5.offsetWidth;
+    o5.classList.remove("active");
     Co5.classList.add("clickthemeup");
     Co5.addEventListener("animationend", moveO3);
-  } else {
-    //ACTIVATE CONTENT CONTAINER
-    console.log("activate content container");
-    conContainer.classList.remove("hide");
-    conContainer.classList.add("content_box");
-
-    moveO3();
   }
 }
 
@@ -130,6 +131,7 @@ function moveO3() {
   Co4.removeEventListener("animationend", moveO3);
   Co5.removeEventListener("animationend", moveO3);
 
+  o3.classList.add("active");
   Co3.classList.add("clicktheme");
 }
 
@@ -156,27 +158,23 @@ function clickO4() {
     Co3.classList.remove("clicktheme");
     // RESET
     Co3.offsetWidth;
+    o3.classList.remove("active");
     Co3.classList.add("clickthemeup");
     Co3.addEventListener("animationend", moveO4);
   } else if (Co2.classList.contains("clicktheme")) {
     Co2.classList.remove("clicktheme");
     // RESET
     Co2.offsetWidth;
+    o2.classList.remove("active");
     Co2.classList.add("clickthemeup");
     Co2.addEventListener("animationend", moveO4);
   } else if (Co5.classList.contains("clicktheme")) {
     Co5.classList.remove("clicktheme");
     // RESET
     Co5.offsetWidth;
+    o5.classList.remove("active");
     Co5.classList.add("clickthemeup");
     Co5.addEventListener("animationend", moveO4);
-  } else {
-    //ACTIVATE CONTENT CONTAINER
-    console.log("activate content container");
-    conContainer.classList.remove("hide");
-    conContainer.classList.add("content_box");
-
-    moveO4();
   }
 }
 
@@ -190,6 +188,7 @@ function moveO4() {
   Co2.removeEventListener("animationend", moveO4);
   Co5.removeEventListener("animationend", moveO4);
 
+  o4.classList.add("active");
   Co4.classList.add("clicktheme");
 }
 
@@ -216,27 +215,23 @@ function clickO5() {
     Co2.classList.remove("clicktheme");
     // RESET
     Co2.offsetWidth;
+    o2.classList.remove("active");
     Co2.classList.add("clickthemeup");
     Co2.addEventListener("animationend", moveO5);
   } else if (Co4.classList.contains("clicktheme")) {
     Co4.classList.remove("clicktheme");
     // RESET
     Co4.offsetWidth;
+    o4.classList.remove("active");
     Co4.classList.add("clickthemeup");
     Co4.addEventListener("animationend", moveO5);
   } else if (Co3.classList.contains("clicktheme")) {
     Co3.classList.remove("clicktheme");
     // RESET
     Co3.offsetWidth;
+    o3.classList.remove("active");
     Co3.classList.add("clickthemeup");
     Co3.addEventListener("animationend", moveO5);
-  } else {
-    //ACTIVATE CONTENT CONTAINER
-    console.log("activate content container");
-    conContainer.classList.remove("hide");
-    conContainer.classList.add("content_box");
-
-    moveO5();
   }
 }
 
@@ -250,5 +245,6 @@ function moveO5() {
   Co4.removeEventListener("animationend", moveO5);
   Co3.removeEventListener("animationend", moveO5);
 
+  o5.classList.add("active");
   Co5.classList.add("clicktheme");
 }

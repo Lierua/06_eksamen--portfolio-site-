@@ -42,17 +42,16 @@
   animation-fill-mode: forwards;
 }
 
-@media (min-width: 800px) {
-  @keyframes clickthemeup_kf {
-    0% {
-      transform: translate(0, 0);
-    }
-
-    100% {
-      transform: translate(0, -100%);
-    }
+@keyframes clickthemeup_kf {
+  0% {
+    transform: translate(0, 0);
   }
 
+  100% {
+    transform: translate(0, -100%);
+  }
+}
+@media (min-width: 800px) {
   .menubg {
     animation-name: menubg_kf;
     animation-duration: 1s;
@@ -60,15 +59,15 @@
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
   }
-}
 
-@keyframes menubg_kf {
-  0% {
-  }
+  @keyframes menubg_kf {
+    0% {
+    }
 
-  100% {
-    background: #0003;
-    backdrop-filter: blur(15px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    100% {
+      background: #0003;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
   }
 }
