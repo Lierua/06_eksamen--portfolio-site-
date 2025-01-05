@@ -100,8 +100,8 @@
     width: 200px;
   }
 
-  #o2sec1,
-  #o2sec3 {
+  .dsec1,
+  .dsec3 {
     padding: 1rem;
     height: 300px;
     display: grid;
@@ -111,7 +111,7 @@
     margin-bottom: 1rem;
   }
 
-  #o2sec2 {
+  .dsec2 {
     padding: 1rem;
     height: 300px;
     display: grid;
@@ -127,8 +127,13 @@
     position: relative;
   }
 
-  .unsectionL,
-  .unsectionR {
+  .unsectionL1,
+  .unsectionR1,
+  .unsectionL2,
+  .unsectionR2,
+  .unsectionL3,
+  .unsectionR3 {
     position: absolute;
+    transform: translate(-100%, 0);
   }
 }
