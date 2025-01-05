@@ -15,19 +15,26 @@ const conContainer03 = document.querySelector("#content-container03");
 const conContainer04 = document.querySelector("#content-container04");
 const conContainer05 = document.querySelector("#content-container05");
 
-const sec1 = document.querySelector(".sec1");
-const sec2 = document.querySelector(".sec2");
-const sec3 = document.querySelector(".sec3");
-const dsec1 = document.querySelector(".dsec1");
-const dsec2 = document.querySelector(".dsec2");
-const dsec3 = document.querySelector(".dsec3");
+const sec1 = document.querySelectorAll(".sec1");
+const sec2 = document.querySelectorAll(".sec2");
+const sec3 = document.querySelectorAll(".sec3");
+const dsec1 = document.querySelectorAll(".dsec1");
+const dsec2 = document.querySelectorAll(".dsec2");
+const dsec3 = document.querySelectorAll(".dsec3");
 
 const unsectionL1 = document.querySelectorAll(".unsectionL1");
-const unsectionR1 = document.querySelector(".unsectionR1");
-const unsectionL2 = document.querySelector(".unsectionL2");
-const unsectionR2 = document.querySelector(".unsectionR2");
+const unsectionR1 = document.querySelectorAll(".unsectionR1");
+const unsectionL2 = document.querySelectorAll(".unsectionL2");
+const unsectionR2 = document.querySelectorAll(".unsectionR2");
 const unsectionL3 = document.querySelectorAll(".unsectionL3");
-const unsectionR3 = document.querySelector(".unsectionR3");
+const unsectionR3 = document.querySelectorAll(".unsectionR3");
+
+// ChatGPT (Helper function to remove a class from all elements in a NodeList)
+function removeClassFromElements(nodeList, className) {
+  nodeList.forEach((element) => {
+    element.classList.remove(className);
+  });
+}
 
 window.addEventListener("load", openContent);
 function openContent() {
@@ -94,17 +101,17 @@ function moveO2() {
   conContainer03.classList = "hide center overflow";
   conContainer04.classList = "hide center overflow";
   conContainer05.classList = "hide center overflow";
-  sec1.classList.remove("leftToRight");
-  sec2.classList.remove("leftToRight");
-  sec3.classList.remove("leftToRight");
+  removeClassFromElements(sec1, "rightToLeft");
+  removeClassFromElements(sec2, "rightToLeft");
+  removeClassFromElements(sec3, "rightToLeft");
 
-  unsectionR1.classList.remove("leftToRight");
-  unsectionR2.classList.remove("leftToRight");
-  unsectionR3.classList.remove("leftToRight");
+  removeClassFromElements(unsectionR1, "leftToRight");
+  removeClassFromElements(unsectionR2, "leftToRight");
+  removeClassFromElements(unsectionR3, "leftToRight");
 
-  unsectionL1.classList.remove("rightToLeft");
-  unsectionL2.classList.remove("rightToLeft");
-  unsectionL3.classList.remove("rightToLeft");
+  removeClassFromElements(unsectionL1, "rightToLeft");
+  removeClassFromElements(unsectionL2, "rightToLeft");
+  removeClassFromElements(unsectionL3, "rightToLeft");
 
   //ACTIVATE CONTENT CONTAINER O2
   console.log("activate content container");
@@ -182,17 +189,17 @@ function moveO3() {
   conContainer04.classList = "hide center overflow";
   conContainer05.classList = "hide center overflow";
 
-  sec1.classList.remove("leftToRight");
-  sec2.classList.remove("leftToRight");
-  sec3.classList.remove("leftToRight");
+  removeClassFromElements(sec1, "rightToLeft");
+  removeClassFromElements(sec2, "rightToLeft");
+  removeClassFromElements(sec3, "rightToLeft");
 
-  unsectionR1.classList.remove("leftToRight");
-  unsectionR2.classList.remove("leftToRight");
-  unsectionR3.classList.remove("leftToRight");
+  removeClassFromElements(unsectionR1, "leftToRight");
+  removeClassFromElements(unsectionR2, "leftToRight");
+  removeClassFromElements(unsectionR3, "leftToRight");
 
-  unsectionL1.classList.remove("rightToLeft");
-  unsectionL2.classList.remove("rightToLeft");
-  unsectionL3.classList.remove("rightToLeft");
+  removeClassFromElements(unsectionL1, "rightToLeft");
+  removeClassFromElements(unsectionL2, "rightToLeft");
+  removeClassFromElements(unsectionL3, "rightToLeft");
 
   //ACTIVATE CONTENT CONTAINER O3
   console.log("activate content container");
@@ -270,17 +277,17 @@ function moveO4() {
   conContainer03.classList = "hide center overflow";
   conContainer05.classList = "hide center overflow";
 
-  sec1.classList.remove("leftToRight");
-  sec2.classList.remove("leftToRight");
-  sec3.classList.remove("leftToRight");
+  removeClassFromElements(sec1, "rightToLeft");
+  removeClassFromElements(sec2, "rightToLeft");
+  removeClassFromElements(sec3, "rightToLeft");
 
-  unsectionR1.classList.remove("leftToRight");
-  unsectionR2.classList.remove("leftToRight");
-  unsectionR3.classList.remove("leftToRight");
+  removeClassFromElements(unsectionR1, "leftToRight");
+  removeClassFromElements(unsectionR2, "leftToRight");
+  removeClassFromElements(unsectionR3, "leftToRight");
 
-  unsectionL1.classList.remove("rightToLeft");
-  unsectionL2.classList.remove("rightToLeft");
-  unsectionL3.classList.remove("rightToLeft");
+  removeClassFromElements(unsectionL1, "rightToLeft");
+  removeClassFromElements(unsectionL2, "rightToLeft");
+  removeClassFromElements(unsectionL3, "rightToLeft");
 
   //ACTIVATE CONTENT CONTAINER O4
   console.log("activate content container");
@@ -358,17 +365,17 @@ function moveO5() {
   conContainer03.classList = "hide center overflow";
   conContainer04.classList = "hide center overflow";
 
-  sec1.classList.remove("leftToRight");
-  sec2.classList.remove("leftToRight");
-  sec3.classList.remove("leftToRight");
+  removeClassFromElements(sec1, "rightToLeft");
+  removeClassFromElements(sec2, "rightToLeft");
+  removeClassFromElements(sec3, "rightToLeft");
 
-  unsectionR1.classList.remove("leftToRight");
-  unsectionR2.classList.remove("leftToRight");
-  unsectionR3.classList.remove("leftToRight");
+  removeClassFromElements(unsectionR1, "leftToRight");
+  removeClassFromElements(unsectionR2, "leftToRight");
+  removeClassFromElements(unsectionR3, "leftToRight");
 
-  unsectionL1.classList.remove("rightToLeft");
-  unsectionL2.classList.remove("rightToLeft");
-  unsectionL3.classList.remove("rightToLeft");
+  removeClassFromElements(unsectionL1, "rightToLeft");
+  removeClassFromElements(unsectionL2, "rightToLeft");
+  removeClassFromElements(unsectionL3, "rightToLeft");
 
   //ACTIVATE CONTENT CONTAINER O5
   console.log("activate content container");
@@ -392,49 +399,49 @@ function reveal() {
     console.log("conContainer02 revealed");
     if (window.matchMedia("(max-width: 800px)").matches) {
       console.log("reveal for mobil");
-      window.addEventListener("scroll", show);
+      window.addEventListener("scroll", show1);
 
-      function show() {
+      function show1() {
         //SCROLL VARIABLES ARE FROM CHATGPT
         const scrollTop = window.scrollY;
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
-        const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+        const scrollPercent1 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        if (scrollPercent >= 25) {
-          sec1.classList.add("leftToRight");
+        if (scrollPercent1 >= 25) {
+          sec1[0].classList.add("leftToRight");
         }
-        if (scrollPercent >= 30) {
-          sec2.classList.add("leftToRight");
+        if (scrollPercent1 >= 30) {
+          sec2[0].classList.add("leftToRight");
         }
-        if (scrollPercent >= 35) {
-          sec3.classList.add("leftToRight");
-          window.removeEventListener("scroll", show);
+        if (scrollPercent1 >= 35) {
+          sec3[0].classList.add("leftToRight");
+          window.removeEventListener("scroll", show1);
         }
       }
     } else {
       console.log("reveal for desktop");
-      window.addEventListener("scroll", show);
+      window.addEventListener("scroll", show2);
 
-      function show() {
+      function show2() {
         //SCROLL VARIABLES ARE FROM CHATGPT
         const scrollTop = window.scrollY;
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
-        const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+        const scrollPercent2 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        if (scrollPercent >= 20) {
-          unsectionL1.classList.add("rightToLeft");
-          unsectionR1.classList.add("leftToRight");
+        if (scrollPercent2 >= 20) {
+          unsectionL1[0].classList.add("rightToLeft");
+          unsectionR1[0].classList.add("leftToRight");
         }
-        if (scrollPercent >= 25) {
-          unsectionL2.classList.add("rightToLeft");
-          unsectionR2.classList.add("leftToRight");
+        if (scrollPercent2 >= 25) {
+          unsectionL2[0].classList.add("rightToLeft");
+          unsectionR2[0].classList.add("leftToRight");
         }
-        if (scrollPercent >= 30) {
-          unsectionL3.classList.add("rightToLeft");
-          unsectionR3.classList.add("leftToRight");
-          window.removeEventListener("scroll", show);
+        if (scrollPercent2 >= 30) {
+          unsectionL3[0].classList.add("rightToLeft");
+          unsectionR3[0].classList.add("leftToRight");
+          window.removeEventListener("scroll", show2);
         }
       }
     }
@@ -442,49 +449,49 @@ function reveal() {
     console.log("conContainer03 revealed");
     if (window.matchMedia("(max-width: 800px)").matches) {
       console.log("reveal for mobil");
-      window.addEventListener("scroll", show);
+      window.addEventListener("scroll", show3);
 
-      function show() {
+      function show3() {
         //SCROLL VARIABLES ARE FROM CHATGPT
         const scrollTop = window.scrollY;
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
-        const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+        const scrollPercent3 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        if (scrollPercent >= 25) {
-          sec1.classList.add("leftToRight");
+        if (scrollPercent3 >= 25) {
+          sec1[1].classList.add("leftToRight");
         }
-        if (scrollPercent >= 30) {
-          sec2.classList.add("leftToRight");
+        if (scrollPercent3 >= 30) {
+          sec2[1].classList.add("leftToRight");
         }
-        if (scrollPercent >= 35) {
-          sec3.classList.add("leftToRight");
-          window.removeEventListener("scroll", show);
+        if (scrollPercent3 >= 35) {
+          sec3[1].classList.add("leftToRight");
+          window.removeEventListener("scroll", show3);
         }
       }
     } else {
       console.log("reveal for desktop");
-      window.addEventListener("scroll", show);
+      window.addEventListener("scroll", show4);
 
-      function show() {
+      function show4() {
         //SCROLL VARIABLES ARE FROM CHATGPT
         const scrollTop = window.scrollY;
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
-        const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+        const scrollPercent4 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        if (scrollPercent >= 20) {
-          unsectionL1.classList.add("rightToLeft");
-          unsectionR1.classList.add("leftToRight");
+        if (scrollPercent4 >= 20) {
+          unsectionL1[1].classList.add("rightToLeft");
+          unsectionR1[1].classList.add("leftToRight");
         }
-        if (scrollPercent >= 25) {
-          unsectionL2.classList.add("rightToLeft");
-          unsectionR2.classList.add("leftToRight");
+        if (scrollPercent4 >= 25) {
+          unsectionL2[1].classList.add("rightToLeft");
+          unsectionR2[1].classList.add("leftToRight");
         }
-        if (scrollPercent >= 30) {
-          unsectionL3.classList.add("rightToLeft");
-          unsectionR3.classList.add("leftToRight");
-          window.removeEventListener("scroll", show);
+        if (scrollPercent4 >= 30) {
+          unsectionL3[1].classList.add("rightToLeft");
+          unsectionR3[1].classList.add("leftToRight");
+          window.removeEventListener("scroll", show4);
         }
       }
     }
@@ -492,49 +499,49 @@ function reveal() {
     console.log("conContainer04 revealed");
     if (window.matchMedia("(max-width: 800px)").matches) {
       console.log("reveal for mobil");
-      window.addEventListener("scroll", show);
+      window.addEventListener("scroll", show5);
 
-      function show() {
+      function show5() {
         //SCROLL VARIABLES ARE FROM CHATGPT
         const scrollTop = window.scrollY;
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
-        const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+        const scrollPercent5 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        if (scrollPercent >= 25) {
-          sec1.classList.add("leftToRight");
+        if (scrollPercent5 >= 25) {
+          sec1[2].classList.add("leftToRight");
         }
-        if (scrollPercent >= 30) {
-          sec2.classList.add("leftToRight");
+        if (scrollPercent5 >= 30) {
+          sec2[2].classList.add("leftToRight");
         }
-        if (scrollPercent >= 35) {
-          sec3.classList.add("leftToRight");
-          window.removeEventListener("scroll", show);
+        if (scrollPercent5 >= 35) {
+          sec3[2].classList.add("leftToRight");
+          window.removeEventListener("scroll", show5);
         }
       }
     } else {
       console.log("reveal for desktop");
-      window.addEventListener("scroll", show);
+      window.addEventListener("scroll", show6);
 
-      function show() {
+      function show6() {
         //SCROLL VARIABLES ARE FROM CHATGPT
         const scrollTop = window.scrollY;
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
-        const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+        const scrollPercent6 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        if (scrollPercent >= 20) {
-          unsectionL1.classList.add("rightToLeft");
-          unsectionR1.classList.add("leftToRight");
+        if (scrollPercent6 >= 20) {
+          unsectionL1[2].classList.add("rightToLeft");
+          unsectionR1[2].classList.add("leftToRight");
         }
-        if (scrollPercent >= 25) {
-          unsectionL2.classList.add("rightToLeft");
-          unsectionR2.classList.add("leftToRight");
+        if (scrollPercent6 >= 25) {
+          unsectionL2[2].classList.add("rightToLeft");
+          unsectionR2[2].classList.add("leftToRight");
         }
-        if (scrollPercent >= 30) {
-          unsectionL3.classList.add("rightToLeft");
-          unsectionR3.classList.add("leftToRight");
-          window.removeEventListener("scroll", show);
+        if (scrollPercent6 >= 30) {
+          unsectionL3[2].classList.add("rightToLeft");
+          unsectionR3[2].classList.add("leftToRight");
+          window.removeEventListener("scroll", show6);
         }
       }
     }
@@ -542,49 +549,49 @@ function reveal() {
     console.log("conContainer05 revealed");
     if (window.matchMedia("(max-width: 800px)").matches) {
       console.log("reveal for mobil");
-      window.addEventListener("scroll", show);
+      window.addEventListener("scroll", show7);
 
-      function show() {
+      function show7() {
         //SCROLL VARIABLES ARE FROM CHATGPT
         const scrollTop = window.scrollY;
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
-        const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+        const scrollPercent7 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        if (scrollPercent >= 25) {
-          sec1.classList.add("leftToRight");
+        if (scrollPercent7 >= 25) {
+          sec1[3].classList.add("leftToRight");
         }
-        if (scrollPercent >= 30) {
-          sec2.classList.add("leftToRight");
+        if (scrollPercent7 >= 30) {
+          sec2[3].classList.add("leftToRight");
         }
-        if (scrollPercent >= 35) {
-          sec3.classList.add("leftToRight");
-          window.removeEventListener("scroll", show);
+        if (scrollPercent7 >= 35) {
+          sec3[3].classList.add("leftToRight");
+          window.removeEventListener("scroll", show7);
         }
       }
     } else {
       console.log("reveal for desktop");
-      window.addEventListener("scroll", show);
+      window.addEventListener("scroll", show8);
 
-      function show() {
+      function show8() {
         //SCROLL VARIABLES ARE FROM CHATGPT
         const scrollTop = window.scrollY;
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
-        const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+        const scrollPercent8 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        if (scrollPercent >= 20) {
-          unsectionL1.classList.add("rightToLeft");
-          unsectionR1.classList.add("leftToRight");
+        if (scrollPercent8 >= 20) {
+          unsectionL1[3].classList.add("rightToLeft");
+          unsectionR1[3].classList.add("leftToRight");
         }
-        if (scrollPercent >= 25) {
-          unsectionL2.classList.add("rightToLeft");
-          unsectionR2.classList.add("leftToRight");
+        if (scrollPercent8 >= 25) {
+          unsectionL2[3].classList.add("rightToLeft");
+          unsectionR2[3].classList.add("leftToRight");
         }
-        if (scrollPercent >= 30) {
-          unsectionL3.classList.add("rightToLeft");
-          unsectionR3.classList.add("leftToRight");
-          window.removeEventListener("scroll", show);
+        if (scrollPercent8 >= 30) {
+          unsectionL3[3].classList.add("rightToLeft");
+          unsectionR3[3].classList.add("leftToRight");
+          window.removeEventListener("scroll", show8);
         }
       }
     }
