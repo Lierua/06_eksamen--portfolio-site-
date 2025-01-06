@@ -18,9 +18,18 @@ const conContainer05 = document.querySelector("#content-container05");
 const sec1 = document.querySelectorAll(".sec1");
 const sec2 = document.querySelectorAll(".sec2");
 const sec3 = document.querySelectorAll(".sec3");
+const sec4 = document.querySelectorAll(".sec4");
+const sec5 = document.querySelectorAll(".sec5");
+const sec6 = document.querySelectorAll(".sec6");
+const sec7 = document.querySelectorAll(".sec7");
+
 const dsec1 = document.querySelectorAll(".dsec1");
 const dsec2 = document.querySelectorAll(".dsec2");
 const dsec3 = document.querySelectorAll(".dsec3");
+const dsec4 = document.querySelectorAll(".dsec4");
+const dsec5 = document.querySelectorAll(".dsec5");
+const dsec6 = document.querySelectorAll(".dsec6");
+const dsec7 = document.querySelectorAll(".dsec7");
 
 const unsectionL1 = document.querySelectorAll(".unsectionL1");
 const unsectionR1 = document.querySelectorAll(".unsectionR1");
@@ -28,6 +37,14 @@ const unsectionL2 = document.querySelectorAll(".unsectionL2");
 const unsectionR2 = document.querySelectorAll(".unsectionR2");
 const unsectionL3 = document.querySelectorAll(".unsectionL3");
 const unsectionR3 = document.querySelectorAll(".unsectionR3");
+const unsectionL4 = document.querySelectorAll(".unsectionL4");
+const unsectionR4 = document.querySelectorAll(".unsectionR4");
+const unsectionL5 = document.querySelectorAll(".unsectionL5");
+const unsectionR5 = document.querySelectorAll(".unsectionR5");
+const unsectionL6 = document.querySelectorAll(".unsectionL6");
+const unsectionR6 = document.querySelectorAll(".unsectionR6");
+const unsectionL7 = document.querySelectorAll(".unsectionL7");
+const unsectionR7 = document.querySelectorAll(".unsectionR7");
 
 // ChatGPT (Helper function to remove a class from all elements in a NodeList)
 function removeClassFromElements(nodeList, className) {
@@ -98,20 +115,33 @@ function moveO2() {
   o2.classList.add("active");
 
   //reset of content-boxs
+  conContainer05.classList = "hide center overflow";
   conContainer03.classList = "hide center overflow";
   conContainer04.classList = "hide center overflow";
-  conContainer05.classList = "hide center overflow";
+
   removeClassFromElements(sec1, "rightToLeft");
   removeClassFromElements(sec2, "rightToLeft");
   removeClassFromElements(sec3, "rightToLeft");
+  removeClassFromElements(sec4, "rightToLeft");
+  removeClassFromElements(sec5, "rightToLeft");
+  removeClassFromElements(sec6, "rightToLeft");
+  removeClassFromElements(sec7, "rightToLeft");
 
   removeClassFromElements(unsectionR1, "leftToRight");
   removeClassFromElements(unsectionR2, "leftToRight");
   removeClassFromElements(unsectionR3, "leftToRight");
+  removeClassFromElements(unsectionR4, "leftToRight");
+  removeClassFromElements(unsectionR5, "leftToRight");
+  removeClassFromElements(unsectionR6, "leftToRight");
+  removeClassFromElements(unsectionR7, "leftToRight");
 
   removeClassFromElements(unsectionL1, "rightToLeft");
   removeClassFromElements(unsectionL2, "rightToLeft");
   removeClassFromElements(unsectionL3, "rightToLeft");
+  removeClassFromElements(unsectionL4, "rightToLeft");
+  removeClassFromElements(unsectionL5, "rightToLeft");
+  removeClassFromElements(unsectionL6, "rightToLeft");
+  removeClassFromElements(unsectionL7, "rightToLeft");
 
   //ACTIVATE CONTENT CONTAINER O2
   console.log("activate content container");
@@ -186,20 +216,32 @@ function moveO3() {
 
   //reset of content-boxs
   conContainerO2.classList = "hide center overflow";
-  conContainer04.classList = "hide center overflow";
   conContainer05.classList = "hide center overflow";
+  conContainer04.classList = "hide center overflow";
 
   removeClassFromElements(sec1, "rightToLeft");
   removeClassFromElements(sec2, "rightToLeft");
   removeClassFromElements(sec3, "rightToLeft");
+  removeClassFromElements(sec4, "rightToLeft");
+  removeClassFromElements(sec5, "rightToLeft");
+  removeClassFromElements(sec6, "rightToLeft");
+  removeClassFromElements(sec7, "rightToLeft");
 
   removeClassFromElements(unsectionR1, "leftToRight");
   removeClassFromElements(unsectionR2, "leftToRight");
   removeClassFromElements(unsectionR3, "leftToRight");
+  removeClassFromElements(unsectionR4, "leftToRight");
+  removeClassFromElements(unsectionR5, "leftToRight");
+  removeClassFromElements(unsectionR6, "leftToRight");
+  removeClassFromElements(unsectionR7, "leftToRight");
 
   removeClassFromElements(unsectionL1, "rightToLeft");
   removeClassFromElements(unsectionL2, "rightToLeft");
   removeClassFromElements(unsectionL3, "rightToLeft");
+  removeClassFromElements(unsectionL4, "rightToLeft");
+  removeClassFromElements(unsectionL5, "rightToLeft");
+  removeClassFromElements(unsectionL6, "rightToLeft");
+  removeClassFromElements(unsectionL7, "rightToLeft");
 
   //ACTIVATE CONTENT CONTAINER O3
   console.log("activate content container");
@@ -280,14 +322,26 @@ function moveO4() {
   removeClassFromElements(sec1, "rightToLeft");
   removeClassFromElements(sec2, "rightToLeft");
   removeClassFromElements(sec3, "rightToLeft");
+  removeClassFromElements(sec4, "rightToLeft");
+  removeClassFromElements(sec5, "rightToLeft");
+  removeClassFromElements(sec6, "rightToLeft");
+  removeClassFromElements(sec7, "rightToLeft");
 
   removeClassFromElements(unsectionR1, "leftToRight");
   removeClassFromElements(unsectionR2, "leftToRight");
   removeClassFromElements(unsectionR3, "leftToRight");
+  removeClassFromElements(unsectionR4, "leftToRight");
+  removeClassFromElements(unsectionR5, "leftToRight");
+  removeClassFromElements(unsectionR6, "leftToRight");
+  removeClassFromElements(unsectionR7, "leftToRight");
 
   removeClassFromElements(unsectionL1, "rightToLeft");
   removeClassFromElements(unsectionL2, "rightToLeft");
   removeClassFromElements(unsectionL3, "rightToLeft");
+  removeClassFromElements(unsectionL4, "rightToLeft");
+  removeClassFromElements(unsectionL5, "rightToLeft");
+  removeClassFromElements(unsectionL6, "rightToLeft");
+  removeClassFromElements(unsectionL7, "rightToLeft");
 
   //ACTIVATE CONTENT CONTAINER O4
   console.log("activate content container");
@@ -368,14 +422,26 @@ function moveO5() {
   removeClassFromElements(sec1, "rightToLeft");
   removeClassFromElements(sec2, "rightToLeft");
   removeClassFromElements(sec3, "rightToLeft");
+  removeClassFromElements(sec4, "rightToLeft");
+  removeClassFromElements(sec5, "rightToLeft");
+  removeClassFromElements(sec6, "rightToLeft");
+  removeClassFromElements(sec7, "rightToLeft");
 
   removeClassFromElements(unsectionR1, "leftToRight");
   removeClassFromElements(unsectionR2, "leftToRight");
   removeClassFromElements(unsectionR3, "leftToRight");
+  removeClassFromElements(unsectionR4, "leftToRight");
+  removeClassFromElements(unsectionR5, "leftToRight");
+  removeClassFromElements(unsectionR6, "leftToRight");
+  removeClassFromElements(unsectionR7, "leftToRight");
 
   removeClassFromElements(unsectionL1, "rightToLeft");
   removeClassFromElements(unsectionL2, "rightToLeft");
   removeClassFromElements(unsectionL3, "rightToLeft");
+  removeClassFromElements(unsectionL4, "rightToLeft");
+  removeClassFromElements(unsectionL5, "rightToLeft");
+  removeClassFromElements(unsectionL6, "rightToLeft");
+  removeClassFromElements(unsectionL7, "rightToLeft");
 
   //ACTIVATE CONTENT CONTAINER O5
   console.log("activate content container");
@@ -416,7 +482,7 @@ function reveal() {
         }
         if (scrollPercent1 >= 35) {
           sec3[0].classList.add("leftToRight");
-          window.removeEventListener("scroll", show1);
+          //window.removeEventListener("scroll", show1);
         }
       }
     } else {
@@ -441,7 +507,7 @@ function reveal() {
         if (scrollPercent2 >= 30) {
           unsectionL3[0].classList.add("rightToLeft");
           unsectionR3[0].classList.add("leftToRight");
-          window.removeEventListener("scroll", show2);
+          //window.removeEventListener("scroll", show2);
         }
       }
     }
@@ -466,7 +532,16 @@ function reveal() {
         }
         if (scrollPercent3 >= 35) {
           sec3[1].classList.add("leftToRight");
-          window.removeEventListener("scroll", show3);
+        }
+        if (scrollPercent3 >= 40) {
+          sec4[0].classList.add("leftToRight");
+        }
+        if (scrollPercent3 >= 45) {
+          sec5[0].classList.add("leftToRight");
+        }
+        if (scrollPercent3 >= 50) {
+          sec6[0].classList.add("leftToRight");
+          //window.removeEventListener("scroll", show3);
         }
       }
     } else {
@@ -491,7 +566,19 @@ function reveal() {
         if (scrollPercent4 >= 30) {
           unsectionL3[1].classList.add("rightToLeft");
           unsectionR3[1].classList.add("leftToRight");
-          window.removeEventListener("scroll", show4);
+        }
+        if (scrollPercent4 >= 35) {
+          unsectionL4[0].classList.add("rightToLeft");
+          unsectionR4[0].classList.add("leftToRight");
+        }
+        if (scrollPercent4 >= 40) {
+          unsectionL5[0].classList.add("rightToLeft");
+          unsectionR5[0].classList.add("leftToRight");
+        }
+        if (scrollPercent4 >= 45) {
+          unsectionL6[0].classList.add("rightToLeft");
+          unsectionR6[0].classList.add("leftToRight");
+          //window.removeEventListener("scroll", show4);
         }
       }
     }
@@ -516,7 +603,16 @@ function reveal() {
         }
         if (scrollPercent5 >= 35) {
           sec3[2].classList.add("leftToRight");
-          window.removeEventListener("scroll", show5);
+        }
+        if (scrollPercent5 >= 40) {
+          sec4[1].classList.add("leftToRight");
+        }
+        if (scrollPercent5 >= 45) {
+          sec5[1].classList.add("leftToRight");
+        }
+        if (scrollPercent5 >= 50) {
+          sec6[1].classList.add("leftToRight");
+          // window.removeEventListener("scroll", show3);
         }
       }
     } else {
@@ -541,7 +637,19 @@ function reveal() {
         if (scrollPercent6 >= 30) {
           unsectionL3[2].classList.add("rightToLeft");
           unsectionR3[2].classList.add("leftToRight");
-          window.removeEventListener("scroll", show6);
+        }
+        if (scrollPercent6 >= 35) {
+          unsectionL4[1].classList.add("rightToLeft");
+          unsectionR4[1].classList.add("leftToRight");
+        }
+        if (scrollPercent6 >= 40) {
+          unsectionL5[1].classList.add("rightToLeft");
+          unsectionR5[1].classList.add("leftToRight");
+        }
+        if (scrollPercent6 >= 45) {
+          unsectionL6[1].classList.add("rightToLeft");
+          unsectionR6[1].classList.add("leftToRight");
+          //window.removeEventListener("scroll", show4);
         }
       }
     }
@@ -566,7 +674,19 @@ function reveal() {
         }
         if (scrollPercent7 >= 35) {
           sec3[3].classList.add("leftToRight");
-          window.removeEventListener("scroll", show7);
+        }
+        if (scrollPercent7 >= 40) {
+          sec4[2].classList.add("leftToRight");
+        }
+        if (scrollPercent7 >= 45) {
+          sec5[2].classList.add("leftToRight");
+        }
+        if (scrollPercent7 >= 50) {
+          sec6[2].classList.add("leftToRight");
+        }
+        if (scrollPercent7 >= 55) {
+          sec7[0].classList.add("leftToRight");
+          //window.removeEventListener("scroll", show7);
         }
       }
     } else {
@@ -591,7 +711,23 @@ function reveal() {
         if (scrollPercent8 >= 30) {
           unsectionL3[3].classList.add("rightToLeft");
           unsectionR3[3].classList.add("leftToRight");
-          window.removeEventListener("scroll", show8);
+        }
+        if (scrollPercent8 >= 35) {
+          unsectionL4[2].classList.add("rightToLeft");
+          unsectionR4[2].classList.add("leftToRight");
+        }
+        if (scrollPercent8 >= 40) {
+          unsectionL5[2].classList.add("rightToLeft");
+          unsectionR5[2].classList.add("leftToRight");
+        }
+        if (scrollPercent8 >= 45) {
+          unsectionL6[2].classList.add("rightToLeft");
+          unsectionR6[2].classList.add("leftToRight");
+        }
+        if (scrollPercent8 >= 50) {
+          unsectionL7[0].classList.add("rightToLeft");
+          unsectionR7[0].classList.add("leftToRight");
+          //window.removeEventListener("scroll", show8);
         }
       }
     }

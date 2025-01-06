@@ -448,7 +448,9 @@ button.pop-button:active {
 .lightbox-content {
   max-width: 90%;
   max-height: 90%;
-  border-radius: 10px;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
 }
 
 /* Close button for lightbox */
@@ -637,7 +639,11 @@ button.pop-button:active {
 @media (max-width: 800px) {
   .sec1,
   .sec2,
-  .sec3 {
+  .sec3,
+  .sec4,
+  .sec5,
+  .sec6,
+  .sec7 {
     display: grid;
     gap: 10px;
     margin-bottom: 2rem;

@@ -101,7 +101,9 @@
   } */
 
   .dsec1,
-  .dsec3 {
+  .dsec3,
+  .dsec5,
+  .dsec7 {
     padding: 1rem;
     height: 300px;
     display: grid;
@@ -111,7 +113,9 @@
     margin-bottom: 1rem;
   }
 
-  .dsec2 {
+  .dsec2,
+  .dsec4,
+  .dsec6 {
     padding: 1rem;
     height: 300px;
     display: grid;
@@ -132,7 +136,15 @@
   .unsectionL2,
   .unsectionR2,
   .unsectionL3,
-  .unsectionR3 {
+  .unsectionR3,
+  .unsectionL4,
+  .unsectionR4,
+  .unsectionL5,
+  .unsectionR5,
+  .unsectionL6,
+  .unsectionR6,
+  .unsectionL7,
+  .unsectionR7 {
     position: absolute;
     transform: translate(-100%, 0);
   }
