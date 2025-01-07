@@ -77,9 +77,9 @@
 
   .menu_bm {
     border-radius: 100px;
-    width: 300px;
+    width: 100%;
     justify-content: space-around;
-    padding: 0.3rem 4rem 0.3rem 4rem;
+    padding: 0.3rem 2rem 0.3rem 2rem;
   }
 
   .textright {
