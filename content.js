@@ -63,6 +63,12 @@ o2.addEventListener("click", clickO2);
 function clickO2() {
   console.log("02");
 
+  if (!o2.classList.contains("active")) {
+    //make the other content boxes disappear
+    conContainer03.classList.add("disappear");
+    conContainer04.classList.add("disappear");
+    conContainer04.classList.add("disappear");
+  }
   //remove and add after set timer events
   o2.removeEventListener("click", clickO2);
   o3.removeEventListener("click", clickO3);
@@ -163,6 +169,12 @@ o3.addEventListener("click", clickO3);
 function clickO3() {
   console.log("03");
 
+  if (!o3.classList.contains("active")) {
+    //make the other content boxes disappear
+    conContainerO2.classList.add("disappear");
+    conContainer04.classList.add("disappear");
+    conContainer05.classList.add("disappear");
+  }
   //remove and add after set timer events
   o2.removeEventListener("click", clickO2);
   o3.removeEventListener("click", clickO3);
@@ -263,6 +275,12 @@ o4.addEventListener("click", clickO4);
 function clickO4() {
   console.log("04");
 
+  if (!o4.classList.contains("active")) {
+    //make the other content boxes disappear
+    conContainer03.classList.add("disappear");
+    conContainerO2.classList.add("disappear");
+    conContainer05.classList.add("disappear");
+  }
   //remove and add after set timer events
   o2.removeEventListener("click", clickO2);
   o3.removeEventListener("click", clickO3);
@@ -362,6 +380,13 @@ o5.addEventListener("click", clickO5);
 
 function clickO5() {
   console.log("05");
+
+  if (!o5.classList.contains("active")) {
+    //make the other content boxes disappear
+    conContainer03.classList.add("disappear");
+    conContainer04.classList.add("disappear");
+    conContainerO2.classList.add("disappear");
+  }
 
   //remove and add after set timer events
   o2.removeEventListener("click", clickO2);

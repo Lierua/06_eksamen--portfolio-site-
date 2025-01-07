@@ -157,3 +157,16 @@
     transform: translate(-100%, 0);
   }
 }
+
+@media (min-width: 1600px) {
+  .horselottie {
+    position: absolute;
+    left: 286px;
+  }
+
+  .headlottie {
+    position: absolute;
+    top: 178px;
+    left: 994px;
+  }
+}
