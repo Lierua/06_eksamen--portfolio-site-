@@ -125,13 +125,13 @@ function moveO2() {
   conContainer03.classList = "hide center overflow";
   conContainer04.classList = "hide center overflow";
 
-  removeClassFromElements(sec1, "rightToLeft");
-  removeClassFromElements(sec2, "rightToLeft");
-  removeClassFromElements(sec3, "rightToLeft");
-  removeClassFromElements(sec4, "rightToLeft");
-  removeClassFromElements(sec5, "rightToLeft");
-  removeClassFromElements(sec6, "rightToLeft");
-  removeClassFromElements(sec7, "rightToLeft");
+  removeClassFromElements(sec1, "leftToRight");
+  removeClassFromElements(sec2, "leftToRight");
+  removeClassFromElements(sec3, "leftToRight");
+  removeClassFromElements(sec4, "leftToRight");
+  removeClassFromElements(sec5, "leftToRight");
+  removeClassFromElements(sec6, "leftToRight");
+  removeClassFromElements(sec7, "leftToRight");
 
   removeClassFromElements(unsectionR1, "leftToRight");
   removeClassFromElements(unsectionR2, "leftToRight");
@@ -231,13 +231,13 @@ function moveO3() {
   conContainer05.classList = "hide center overflow";
   conContainer04.classList = "hide center overflow";
 
-  removeClassFromElements(sec1, "rightToLeft");
-  removeClassFromElements(sec2, "rightToLeft");
-  removeClassFromElements(sec3, "rightToLeft");
-  removeClassFromElements(sec4, "rightToLeft");
-  removeClassFromElements(sec5, "rightToLeft");
-  removeClassFromElements(sec6, "rightToLeft");
-  removeClassFromElements(sec7, "rightToLeft");
+  removeClassFromElements(sec1, "leftToRight");
+  removeClassFromElements(sec2, "leftToRight");
+  removeClassFromElements(sec3, "leftToRight");
+  removeClassFromElements(sec4, "leftToRight");
+  removeClassFromElements(sec5, "leftToRight");
+  removeClassFromElements(sec6, "leftToRight");
+  removeClassFromElements(sec7, "leftToRight");
 
   removeClassFromElements(unsectionR1, "leftToRight");
   removeClassFromElements(unsectionR2, "leftToRight");
@@ -337,13 +337,13 @@ function moveO4() {
   conContainer03.classList = "hide center overflow";
   conContainer05.classList = "hide center overflow";
 
-  removeClassFromElements(sec1, "rightToLeft");
-  removeClassFromElements(sec2, "rightToLeft");
-  removeClassFromElements(sec3, "rightToLeft");
-  removeClassFromElements(sec4, "rightToLeft");
-  removeClassFromElements(sec5, "rightToLeft");
-  removeClassFromElements(sec6, "rightToLeft");
-  removeClassFromElements(sec7, "rightToLeft");
+  removeClassFromElements(sec1, "leftToRight");
+  removeClassFromElements(sec2, "leftToRight");
+  removeClassFromElements(sec3, "leftToRight");
+  removeClassFromElements(sec4, "leftToRight");
+  removeClassFromElements(sec5, "leftToRight");
+  removeClassFromElements(sec6, "leftToRight");
+  removeClassFromElements(sec7, "leftToRight");
 
   removeClassFromElements(unsectionR1, "leftToRight");
   removeClassFromElements(unsectionR2, "leftToRight");
@@ -444,13 +444,13 @@ function moveO5() {
   conContainer03.classList = "hide center overflow";
   conContainer04.classList = "hide center overflow";
 
-  removeClassFromElements(sec1, "rightToLeft");
-  removeClassFromElements(sec2, "rightToLeft");
-  removeClassFromElements(sec3, "rightToLeft");
-  removeClassFromElements(sec4, "rightToLeft");
-  removeClassFromElements(sec5, "rightToLeft");
-  removeClassFromElements(sec6, "rightToLeft");
-  removeClassFromElements(sec7, "rightToLeft");
+  removeClassFromElements(sec1, "leftToRight");
+  removeClassFromElements(sec2, "leftToRight");
+  removeClassFromElements(sec3, "leftToRight");
+  removeClassFromElements(sec4, "leftToRight");
+  removeClassFromElements(sec5, "leftToRight");
+  removeClassFromElements(sec6, "leftToRight");
+  removeClassFromElements(sec7, "leftToRight");
 
   removeClassFromElements(unsectionR1, "leftToRight");
   removeClassFromElements(unsectionR2, "leftToRight");
