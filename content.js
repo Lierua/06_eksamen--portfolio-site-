@@ -733,3 +733,37 @@ function reveal() {
     }
   }
 }
+
+//BACK BUTTON CODE
+const back = document.querySelector("#backbutton");
+
+window.addEventListener("scroll", show9);
+
+function show9() {
+  timeoutId = setTimeout(() => {
+    // SCROLL VARIABLES ARE FROM CHATGPT
+    const scrollTop = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    const scrollPercent9 = (scrollTop / (documentHeight - windowHeight)) * 100;
+
+    if (scrollPercent9 > 25) {
+      console.log("appear");
+      back.classList.remove("hide");
+
+      back.offsetWidth;
+      back.classList = "appear";
+    }
+    if (scrollPercent9 <= 20) {
+      console.log("disappear");
+      back.offsetWidth;
+      back.classList.add("disappear");
+      back.classList.remove("appear");
+      back.addEventListener("animationend", disappear);
+
+      function disappear() {
+        back.removeEventListener("animationend", disappear);
+      }
+    }
+  }, 100);
+}

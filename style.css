@@ -202,25 +202,6 @@ nav ul li a:hover::after {
   text-align: center;
 }
 
-.order1 {
-  order: 1;
-}
-.order2 {
-  order: 2;
-}
-.order3 {
-  order: 3;
-}
-.order4 {
-  order: 4;
-}
-.order5 {
-  order: 5;
-}
-.order6 {
-  order: 6;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -334,75 +315,6 @@ p {
   font-weight: 400;
   font-style: normal;
   font-size: 120%;
-}
-
-/* Base kode er fra ChatGPT (slider) */
-.slider {
-  margin: 0 auto;
-  position: relative;
-  border-radius: 5px;
-  width: 300px;
-  height: 500px;
-  overflow: hidden;
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.6s ease;
-  width: 100%;
-}
-
-.slide {
-  width: 300px;
-  height: 500px;
-  flex-shrink: 0;
-  overflow: hidden;
-}
-
-.slide-img {
-  height: 100%;
-  object-fit: cover;
-  padding: 0;
-  margin: 0;
-}
-
-button {
-  position: absolute;
-  top: 50%;
-  background-color: rgba(0, 0, 0, 0);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 200%;
-  transition: transform 0.1s ease;
-  z-index: 9;
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
-button.pop-button:active {
-  animation: pop-up 0.2s ease forwards;
-}
-
-/* Base koden er fra ChatGPT (keyframes) */
-
-@keyframes pop-up {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2); /* Slightly larger size */
-  }
-  100% {
-    transform: scale(1); /* Back to normal size */
-  }
 }
 
 /* Base koden for at fullsize images er fra ChatGPT (Lightbox, Thumbnail) */
@@ -592,6 +504,9 @@ button.pop-button:active {
   #C05 {
     width: 95%;
   }
+  .profilcontainer {
+    position: relative;
+  }
 }
 
 .profilcontainer {
@@ -636,6 +551,15 @@ button.pop-button:active {
   top: 181px;
 }
 
+.profillottie {
+  width: 644px;
+  height: 286px;
+  position: absolute;
+  top: 26px;
+  z-index: 10;
+  left: -178px;
+}
+
 @media (max-width: 800px) {
   .sec1,
   .sec2,
@@ -661,4 +585,41 @@ button.pop-button:active {
   .o-1 {
     order: -1;
   }
+}
+
+#backbutton {
+  position: fixed;
+  z-index: 10;
+  text-align: center;
+  top: 88%;
+  left: 80%;
+}
+
+.round-button {
+  width: 60px;
+  height: 60px;
+  background: #afafaf33;
+  backdrop-filter: blur(15px);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.round-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 12px solid white;
 }
