@@ -19,6 +19,7 @@ function addBG() {
 
 function showTitle() {
   console.log("start");
+
   title.classList.add("titleup");
 }
 // function showBio() {

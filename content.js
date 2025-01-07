@@ -767,3 +767,69 @@ function show9() {
     }
   }, 100);
 }
+
+//Sound
+const wav1 = document.querySelector("#wav1");
+const wav2 = document.querySelector("#wav2");
+
+o2.addEventListener("click", () => {
+  if (!o2.classList.contains("active")) {
+    if (Math.random() < 0.5) {
+      console.log("wav1");
+      wav1.volume = 0.3;
+      wav1.play();
+    } else {
+      console.log("wav2");
+      wav2.play();
+      wav2.volume = 0.7;
+    }
+  } else {
+    console.log("no sound");
+  }
+});
+
+o3.addEventListener("click", () => {
+  if (!o3.classList.contains("active")) {
+    if (Math.random() < 0.5) {
+      console.log("wav1");
+      wav1.volume = 0.3;
+      wav1.play();
+    } else {
+      console.log("wav2");
+      wav2.play();
+      wav2.volume = 0.7;
+    }
+  } else {
+    console.log("no sound");
+  }
+});
+o4.addEventListener("click", () => {
+  if (!o4.classList.contains("active")) {
+    if (Math.random() < 0.5) {
+      console.log("wav1");
+      wav1.volume = 0.3;
+      wav1.play();
+    } else {
+      console.log("wav2");
+      wav2.play();
+      wav2.volume = 0.7;
+    }
+  } else {
+    console.log("no sound");
+  }
+});
+o5.addEventListener("click", () => {
+  if (!o5.classList.contains("active")) {
+    if (Math.random() < 0.5) {
+      console.log("wav1");
+      wav1.volume = 0.3;
+      wav1.play();
+    } else {
+      console.log("wav2");
+      wav2.play();
+      wav2.volume = 0.7;
+    }
+  } else {
+    console.log("no sound");
+  }
+});
