@@ -499,14 +499,26 @@ function reveal() {
         const documentHeight = document.documentElement.scrollHeight;
         const scrollPercent1 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        if (scrollPercent1 >= 25) {
+        if (scrollPercent1 >= 15) {
           sec1[0].classList.add("leftToRight");
         }
-        if (scrollPercent1 >= 30) {
+        if (scrollPercent1 >= 20) {
           sec2[0].classList.add("leftToRight");
         }
-        if (scrollPercent1 >= 35) {
+        if (scrollPercent1 >= 25) {
           sec3[0].classList.add("leftToRight");
+        }
+        if (scrollPercent1 >= 30) {
+          sec4[0].classList.add("leftToRight");
+        }
+        if (scrollPercent1 >= 30) {
+          sec5[0].classList.add("leftToRight");
+        }
+        if (scrollPercent1 >= 30) {
+          sec6[0].classList.add("leftToRight");
+        }
+        if (scrollPercent1 >= 30) {
+          sec7[0].classList.add("leftToRight");
           //window.removeEventListener("scroll", show1);
         }
       }
@@ -521,18 +533,33 @@ function reveal() {
         const documentHeight = document.documentElement.scrollHeight;
         const scrollPercent2 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        if (scrollPercent2 >= 20) {
+        if (scrollPercent2 >= 10) {
           unsectionL1[0].classList.add("rightToLeft");
           unsectionR1[0].classList.add("leftToRight");
         }
-        if (scrollPercent2 >= 25) {
+        if (scrollPercent2 >= 20) {
           unsectionL2[0].classList.add("rightToLeft");
           unsectionR2[0].classList.add("leftToRight");
         }
-        if (scrollPercent2 >= 30) {
+        if (scrollPercent2 >= 25) {
           unsectionL3[0].classList.add("rightToLeft");
           unsectionR3[0].classList.add("leftToRight");
-          //window.removeEventListener("scroll", show2);
+        }
+        if (scrollPercent2 >= 30) {
+          unsectionL4[0].classList.add("rightToLeft");
+          unsectionR4[0].classList.add("leftToRight");
+        }
+        if (scrollPercent2 >= 35) {
+          unsectionL5[0].classList.add("rightToLeft");
+          unsectionR5[0].classList.add("leftToRight");
+        }
+        if (scrollPercent2 >= 40) {
+          unsectionL6[0].classList.add("rightToLeft");
+          unsectionR6[0].classList.add("leftToRight");
+        }
+        if (scrollPercent2 >= 45) {
+          unsectionL7[0].classList.add("rightToLeft");
+          unsectionR7[0].classList.add("leftToRight");
         }
       }
     }
@@ -549,24 +576,26 @@ function reveal() {
         const documentHeight = document.documentElement.scrollHeight;
         const scrollPercent3 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        if (scrollPercent3 >= 25) {
+        if (scrollPercent3 >= 15) {
           sec1[1].classList.add("leftToRight");
         }
-        if (scrollPercent3 >= 30) {
+        if (scrollPercent3 >= 20) {
           sec2[1].classList.add("leftToRight");
         }
-        if (scrollPercent3 >= 35) {
+        if (scrollPercent3 >= 25) {
           sec3[1].classList.add("leftToRight");
         }
+        if (scrollPercent3 >= 30) {
+          sec4[1].classList.add("leftToRight");
+        }
+        if (scrollPercent3 >= 35) {
+          sec5[1].classList.add("leftToRight");
+        }
         if (scrollPercent3 >= 40) {
-          sec4[0].classList.add("leftToRight");
+          sec6[1].classList.add("leftToRight");
         }
         if (scrollPercent3 >= 45) {
-          sec5[0].classList.add("leftToRight");
-        }
-        if (scrollPercent3 >= 50) {
-          sec6[0].classList.add("leftToRight");
-          //window.removeEventListener("scroll", show3);
+          sec7[1].classList.add("leftToRight");
         }
       }
     } else {
@@ -580,30 +609,33 @@ function reveal() {
         const documentHeight = document.documentElement.scrollHeight;
         const scrollPercent4 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        if (scrollPercent4 >= 20) {
+        if (scrollPercent4 >= 10) {
           unsectionL1[1].classList.add("rightToLeft");
           unsectionR1[1].classList.add("leftToRight");
         }
-        if (scrollPercent4 >= 25) {
+        if (scrollPercent4 >= 15) {
           unsectionL2[1].classList.add("rightToLeft");
           unsectionR2[1].classList.add("leftToRight");
         }
-        if (scrollPercent4 >= 30) {
+        if (scrollPercent4 >= 20) {
           unsectionL3[1].classList.add("rightToLeft");
           unsectionR3[1].classList.add("leftToRight");
         }
+        if (scrollPercent4 >= 25) {
+          unsectionL4[1].classList.add("rightToLeft");
+          unsectionR4[1].classList.add("leftToRight");
+        }
+        if (scrollPercent4 >= 30) {
+          unsectionL5[1].classList.add("rightToLeft");
+          unsectionR5[1].classList.add("leftToRight");
+        }
         if (scrollPercent4 >= 35) {
-          unsectionL4[0].classList.add("rightToLeft");
-          unsectionR4[0].classList.add("leftToRight");
+          unsectionL6[1].classList.add("rightToLeft");
+          unsectionR6[1].classList.add("leftToRight");
         }
         if (scrollPercent4 >= 40) {
-          unsectionL5[0].classList.add("rightToLeft");
-          unsectionR5[0].classList.add("leftToRight");
-        }
-        if (scrollPercent4 >= 45) {
-          unsectionL6[0].classList.add("rightToLeft");
-          unsectionR6[0].classList.add("leftToRight");
-          //window.removeEventListener("scroll", show4);
+          unsectionL7[1].classList.add("rightToLeft");
+          unsectionR7[1].classList.add("leftToRight");
         }
       }
     }
@@ -620,24 +652,26 @@ function reveal() {
         const documentHeight = document.documentElement.scrollHeight;
         const scrollPercent5 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        if (scrollPercent5 >= 25) {
+        if (scrollPercent5 >= 15) {
           sec1[2].classList.add("leftToRight");
         }
-        if (scrollPercent5 >= 30) {
+        if (scrollPercent5 >= 20) {
           sec2[2].classList.add("leftToRight");
         }
-        if (scrollPercent5 >= 35) {
+        if (scrollPercent5 >= 25) {
           sec3[2].classList.add("leftToRight");
         }
+        if (scrollPercent5 >= 30) {
+          sec4[2].classList.add("leftToRight");
+        }
+        if (scrollPercent5 >= 35) {
+          sec5[2].classList.add("leftToRight");
+        }
         if (scrollPercent5 >= 40) {
-          sec4[1].classList.add("leftToRight");
+          sec6[2].classList.add("leftToRight");
         }
         if (scrollPercent5 >= 45) {
-          sec5[1].classList.add("leftToRight");
-        }
-        if (scrollPercent5 >= 50) {
-          sec6[1].classList.add("leftToRight");
-          // window.removeEventListener("scroll", show3);
+          sec7[2].classList.add("leftToRight");
         }
       }
     } else {
@@ -651,29 +685,33 @@ function reveal() {
         const documentHeight = document.documentElement.scrollHeight;
         const scrollPercent6 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        if (scrollPercent6 >= 20) {
+        if (scrollPercent6 >= 10) {
           unsectionL1[2].classList.add("rightToLeft");
           unsectionR1[2].classList.add("leftToRight");
         }
-        if (scrollPercent6 >= 25) {
+        if (scrollPercent6 >= 15) {
           unsectionL2[2].classList.add("rightToLeft");
           unsectionR2[2].classList.add("leftToRight");
         }
-        if (scrollPercent6 >= 30) {
+        if (scrollPercent6 >= 20) {
           unsectionL3[2].classList.add("rightToLeft");
           unsectionR3[2].classList.add("leftToRight");
         }
+        if (scrollPercent6 >= 25) {
+          unsectionL4[2].classList.add("rightToLeft");
+          unsectionR4[2].classList.add("leftToRight");
+        }
+        if (scrollPercent6 >= 30) {
+          unsectionL5[2].classList.add("rightToLeft");
+          unsectionR5[2].classList.add("leftToRight");
+        }
         if (scrollPercent6 >= 35) {
-          unsectionL4[1].classList.add("rightToLeft");
-          unsectionR4[1].classList.add("leftToRight");
+          unsectionL6[2].classList.add("rightToLeft");
+          unsectionR6[2].classList.add("leftToRight");
         }
         if (scrollPercent6 >= 40) {
-          unsectionL5[1].classList.add("rightToLeft");
-          unsectionR5[1].classList.add("leftToRight");
-        }
-        if (scrollPercent6 >= 45) {
-          unsectionL6[1].classList.add("rightToLeft");
-          unsectionR6[1].classList.add("leftToRight");
+          unsectionL7[2].classList.add("rightToLeft");
+          unsectionR7[2].classList.add("leftToRight");
           //window.removeEventListener("scroll", show4);
         }
       }
@@ -691,26 +729,26 @@ function reveal() {
         const documentHeight = document.documentElement.scrollHeight;
         const scrollPercent7 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        if (scrollPercent7 >= 25) {
+        if (scrollPercent7 >= 15) {
           sec1[3].classList.add("leftToRight");
         }
-        if (scrollPercent7 >= 30) {
+        if (scrollPercent7 >= 20) {
           sec2[3].classList.add("leftToRight");
         }
-        if (scrollPercent7 >= 35) {
+        if (scrollPercent7 >= 25) {
           sec3[3].classList.add("leftToRight");
         }
+        if (scrollPercent7 >= 30) {
+          sec4[3].classList.add("leftToRight");
+        }
+        if (scrollPercent7 >= 35) {
+          sec5[3].classList.add("leftToRight");
+        }
         if (scrollPercent7 >= 40) {
-          sec4[2].classList.add("leftToRight");
+          sec6[3].classList.add("leftToRight");
         }
         if (scrollPercent7 >= 45) {
-          sec5[2].classList.add("leftToRight");
-        }
-        if (scrollPercent7 >= 50) {
-          sec6[2].classList.add("leftToRight");
-        }
-        if (scrollPercent7 >= 55) {
-          sec7[0].classList.add("leftToRight");
+          sec7[3].classList.add("leftToRight");
           //window.removeEventListener("scroll", show7);
         }
       }
@@ -725,33 +763,33 @@ function reveal() {
         const documentHeight = document.documentElement.scrollHeight;
         const scrollPercent8 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-        if (scrollPercent8 >= 20) {
+        if (scrollPercent8 >= 10) {
           unsectionL1[3].classList.add("rightToLeft");
           unsectionR1[3].classList.add("leftToRight");
         }
-        if (scrollPercent8 >= 25) {
+        if (scrollPercent8 >= 15) {
           unsectionL2[3].classList.add("rightToLeft");
           unsectionR2[3].classList.add("leftToRight");
         }
-        if (scrollPercent8 >= 30) {
+        if (scrollPercent8 >= 20) {
           unsectionL3[3].classList.add("rightToLeft");
           unsectionR3[3].classList.add("leftToRight");
         }
+        if (scrollPercent8 >= 25) {
+          unsectionL4[3].classList.add("rightToLeft");
+          unsectionR4[3].classList.add("leftToRight");
+        }
+        if (scrollPercent8 >= 30) {
+          unsectionL5[3].classList.add("rightToLeft");
+          unsectionR5[3].classList.add("leftToRight");
+        }
         if (scrollPercent8 >= 35) {
-          unsectionL4[2].classList.add("rightToLeft");
-          unsectionR4[2].classList.add("leftToRight");
+          unsectionL6[3].classList.add("rightToLeft");
+          unsectionR6[3].classList.add("leftToRight");
         }
         if (scrollPercent8 >= 40) {
-          unsectionL5[2].classList.add("rightToLeft");
-          unsectionR5[2].classList.add("leftToRight");
-        }
-        if (scrollPercent8 >= 45) {
-          unsectionL6[2].classList.add("rightToLeft");
-          unsectionR6[2].classList.add("leftToRight");
-        }
-        if (scrollPercent8 >= 50) {
-          unsectionL7[0].classList.add("rightToLeft");
-          unsectionR7[0].classList.add("leftToRight");
+          unsectionL7[3].classList.add("rightToLeft");
+          unsectionR7[3].classList.add("leftToRight");
           //window.removeEventListener("scroll", show8);
         }
       }
@@ -772,14 +810,14 @@ function show9() {
     const documentHeight = document.documentElement.scrollHeight;
     const scrollPercent9 = (scrollTop / (documentHeight - windowHeight)) * 100;
 
-    if (scrollPercent9 > 25) {
+    if (scrollPercent9 > 20) {
       console.log("appear");
       back.classList.remove("hide");
 
       back.offsetWidth;
       back.classList = "appear";
     }
-    if (scrollPercent9 <= 20) {
+    if (scrollPercent9 <= 16) {
       console.log("disappear");
       back.offsetWidth;
       back.classList.add("disappear");

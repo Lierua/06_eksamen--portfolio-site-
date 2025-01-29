@@ -30,7 +30,6 @@
   #title {
     top: 75%;
   }
-
   #container {
     height: 450px;
     max-width: 800px;
@@ -98,6 +97,11 @@
     left: 90%;
   }
 
+  .contenttext {
+    padding: 1.5rem 3rem;
+    height: 300px;
+  }
+
   /* .left-decorative-line {
     border: none;
     height: 0.2rem; 
@@ -139,20 +143,7 @@
     position: relative;
   }
 
-  .unsectionL1,
-  .unsectionR1,
-  .unsectionL2,
-  .unsectionR2,
-  .unsectionL3,
-  .unsectionR3,
-  .unsectionL4,
-  .unsectionR4,
-  .unsectionL5,
-  .unsectionR5,
-  .unsectionL6,
-  .unsectionR6,
-  .unsectionL7,
-  .unsectionR7 {
+  .unsec {
     position: absolute;
     transform: translate(-100%, 0);
   }
