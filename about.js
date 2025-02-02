@@ -1,6 +1,6 @@
 // FROM CHATGPT
 
-const images = document.querySelector(".clickableImage"); // Select all images
+const images = document.querySelectorAll(".clickableImage"); // Select all images
 const popup = document.getElementById("popup");
 const popupText = document.getElementById("popupText");
 const overlay = document.getElementById("overlay");
