@@ -541,23 +541,23 @@ function reveal() {
           unsectionL2[0].classList.add("rightToLeft");
           unsectionR2[0].classList.add("leftToRight");
         }
-        if (scrollPercent2 >= 25) {
+        if (scrollPercent2 >= 33) {
           unsectionL3[0].classList.add("rightToLeft");
           unsectionR3[0].classList.add("leftToRight");
         }
-        if (scrollPercent2 >= 30) {
+        if (scrollPercent2 >= 37) {
           unsectionL4[0].classList.add("rightToLeft");
           unsectionR4[0].classList.add("leftToRight");
         }
-        if (scrollPercent2 >= 35) {
+        if (scrollPercent2 >= 43) {
           unsectionL5[0].classList.add("rightToLeft");
           unsectionR5[0].classList.add("leftToRight");
         }
-        if (scrollPercent2 >= 40) {
+        if (scrollPercent2 >= 53) {
           unsectionL6[0].classList.add("rightToLeft");
           unsectionR6[0].classList.add("leftToRight");
         }
-        if (scrollPercent2 >= 45) {
+        if (scrollPercent2 >= 60) {
           unsectionL7[0].classList.add("rightToLeft");
           unsectionR7[0].classList.add("leftToRight");
         }
@@ -613,27 +613,27 @@ function reveal() {
           unsectionL1[1].classList.add("rightToLeft");
           unsectionR1[1].classList.add("leftToRight");
         }
-        if (scrollPercent4 >= 15) {
+        if (scrollPercent4 >= 20) {
           unsectionL2[1].classList.add("rightToLeft");
           unsectionR2[1].classList.add("leftToRight");
         }
-        if (scrollPercent4 >= 20) {
+        if (scrollPercent4 >= 32) {
           unsectionL3[1].classList.add("rightToLeft");
           unsectionR3[1].classList.add("leftToRight");
         }
-        if (scrollPercent4 >= 25) {
+        if (scrollPercent4 >= 43) {
           unsectionL4[1].classList.add("rightToLeft");
           unsectionR4[1].classList.add("leftToRight");
         }
-        if (scrollPercent4 >= 30) {
+        if (scrollPercent4 >= 53) {
           unsectionL5[1].classList.add("rightToLeft");
           unsectionR5[1].classList.add("leftToRight");
         }
-        if (scrollPercent4 >= 35) {
+        if (scrollPercent4 >= 60) {
           unsectionL6[1].classList.add("rightToLeft");
           unsectionR6[1].classList.add("leftToRight");
         }
-        if (scrollPercent4 >= 40) {
+        if (scrollPercent4 >= 65) {
           unsectionL7[1].classList.add("rightToLeft");
           unsectionR7[1].classList.add("leftToRight");
         }
@@ -689,27 +689,27 @@ function reveal() {
           unsectionL1[2].classList.add("rightToLeft");
           unsectionR1[2].classList.add("leftToRight");
         }
-        if (scrollPercent6 >= 15) {
+        if (scrollPercent6 >= 20) {
           unsectionL2[2].classList.add("rightToLeft");
           unsectionR2[2].classList.add("leftToRight");
         }
-        if (scrollPercent6 >= 20) {
+        if (scrollPercent6 >= 37) {
           unsectionL3[2].classList.add("rightToLeft");
           unsectionR3[2].classList.add("leftToRight");
         }
-        if (scrollPercent6 >= 25) {
+        if (scrollPercent6 >= 43) {
           unsectionL4[2].classList.add("rightToLeft");
           unsectionR4[2].classList.add("leftToRight");
         }
-        if (scrollPercent6 >= 30) {
+        if (scrollPercent6 >= 53) {
           unsectionL5[2].classList.add("rightToLeft");
           unsectionR5[2].classList.add("leftToRight");
         }
-        if (scrollPercent6 >= 35) {
+        if (scrollPercent6 >= 65) {
           unsectionL6[2].classList.add("rightToLeft");
           unsectionR6[2].classList.add("leftToRight");
         }
-        if (scrollPercent6 >= 40) {
+        if (scrollPercent6 >= 70) {
           unsectionL7[2].classList.add("rightToLeft");
           unsectionR7[2].classList.add("leftToRight");
           //window.removeEventListener("scroll", show4);
@@ -767,27 +767,27 @@ function reveal() {
           unsectionL1[3].classList.add("rightToLeft");
           unsectionR1[3].classList.add("leftToRight");
         }
-        if (scrollPercent8 >= 15) {
+        if (scrollPercent8 >= 20) {
           unsectionL2[3].classList.add("rightToLeft");
           unsectionR2[3].classList.add("leftToRight");
         }
-        if (scrollPercent8 >= 20) {
+        if (scrollPercent8 >= 37) {
           unsectionL3[3].classList.add("rightToLeft");
           unsectionR3[3].classList.add("leftToRight");
         }
-        if (scrollPercent8 >= 25) {
+        if (scrollPercent8 >= 43) {
           unsectionL4[3].classList.add("rightToLeft");
           unsectionR4[3].classList.add("leftToRight");
         }
-        if (scrollPercent8 >= 30) {
+        if (scrollPercent8 >= 53) {
           unsectionL5[3].classList.add("rightToLeft");
           unsectionR5[3].classList.add("leftToRight");
         }
-        if (scrollPercent8 >= 35) {
+        if (scrollPercent8 >= 60) {
           unsectionL6[3].classList.add("rightToLeft");
           unsectionR6[3].classList.add("leftToRight");
         }
-        if (scrollPercent8 >= 40) {
+        if (scrollPercent8 >= 65) {
           unsectionL7[3].classList.add("rightToLeft");
           unsectionR7[3].classList.add("leftToRight");
           //window.removeEventListener("scroll", show8);
